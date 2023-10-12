@@ -28,10 +28,9 @@ export default function Navbar() {
               <AiOutlinePlus />
             </div>
           </div>
-          <div>Work</div>
+          
           <div>About</div>
-          <div>Journal</div>
-          <div>Careers</div>
+          
           <div className="bg-[#643EFF] p-3 rounded-full">
             <button className="text-white">Get in touch</button>
           </div>

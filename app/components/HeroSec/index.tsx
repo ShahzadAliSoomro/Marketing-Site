@@ -4,12 +4,12 @@ import { BsArrowRight } from "react-icons/bs";
 export default function HeroSec() {
   return (
     <div className="w-full container mx-auto">
-      <div className="flex flex-col gap-10 p-14">
+      <div className="flex flex-col gap-10 lg:p-14 p-7">
         <div className="flex flex-col pt-10">
-          <div className="text-7xl">We help our clients</div>
-          <div className="text-7xl font-bold">achieve their goals</div>
+          <div className="lg:text-7xl text-3xl">We help our clients</div>
+          <div className="lg:text-7xl text-4xl font-bold">achieve their goals</div>
         </div>
-        <div className="w-[613.41px] text-lg font-medium">
+        <div className="w-full lg:w-[613.41px] text-lg font-medium">
           Our expert team use creativity and data analytics to build digital
           experiences that deliver our clients' objectives.
         </div>
@@ -25,12 +25,12 @@ export default function HeroSec() {
             <div>
               <p>Our Beliefs</p>
             </div>
-            <div className="w-[1011.66px] text-5xl font-light">
+            <div className="w-full lg:w-[1011.66px] lg:text-5xl text-2xl font-light">
               We believe in doing what it takes to help our clients achieve
               their goals. Doing right by them and building long-lasting
               partnerships. We believe in working hard and having a great time
               doing it.{" "}
-              <span className="text-4xl font-semibold">
+              <span className="lg:text-4xl text-2xl font-semibold">
                 {" "}
                 We believe in flexibility–
               </span>{" "}
