@@ -7,7 +7,9 @@ export default function HeroSec() {
       <div className="flex flex-col gap-10 lg:p-14 p-7">
         <div className="flex flex-col pt-10">
           <div className="lg:text-7xl text-3xl">We help our clients</div>
-          <div className="lg:text-7xl text-4xl font-bold">achieve their goals</div>
+          <div className="lg:text-7xl text-4xl font-bold">
+            achieve their goals
+          </div>
         </div>
         <div className="w-full lg:w-[613.41px] text-lg font-medium">
           Our expert team use creativity and data analytics to build digital
@@ -19,7 +21,7 @@ export default function HeroSec() {
             <BsArrowRight className="text-white w-6 h-6" />
           </div>
         </div>
-        
+
         <div className="flex flex-col gap-10 pt-10">
           <div className="flex flex-col gap-7">
             <div>
