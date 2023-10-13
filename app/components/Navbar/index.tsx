@@ -60,7 +60,7 @@ export default function Navbar() {
             <Link href="/about"> About </Link>
           </div>
           <div className="bg-[#643EFF] p-3 rounded-full">
-            <button className="text-white">Get in touch</button>
+            <Link href="/getintouch" className="text-white">Get in touch</Link>
           </div>
         </div>
       </div>
