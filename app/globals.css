@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Define CSS classes for different background colors */
+.white-background {
+  background-color: white;
+}
+
+.red-background {
+  background-color: red;
+}
+
+.gray-background {
+  background-color: gray;
+}
+
+.black-background {
+  background-color: black;
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
