@@ -50,7 +50,7 @@ export default function Navbar() {
         <div className="flex justify-center items-center gap-10 text-[#A09EA0] text-xl">
           <div className="flex justify-center items-center gap-3">
             <div>
-              <Link href="/services">Services</Link>
+              <Link href="/service">Services</Link>
             </div>
             <div>
               <AiOutlinePlus />

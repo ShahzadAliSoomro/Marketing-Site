@@ -27,7 +27,7 @@ export default function HeroSec() {
             <div>
               <p>Our Beliefs</p>
             </div>
-            <div className="w-full lg:w-[1011.66px] lg:text-5xl text-2xl font-light">
+            <div className="w-full lg:w-[1011.66px] lg:text-5xl text-2xl font-light ">
               We believe in doing what it takes to help our clients achieve
               their goals. Doing right by them and building long-lasting
               partnerships. We believe in working hard and having a great time
