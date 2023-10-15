@@ -74,7 +74,7 @@ export default function Navbar() {
           </div>
         </div>
         <div onClick={toggleMenu} className="md:hidden">
-          <HiOutlineMenuAlt4 className="w-8 h-8" />
+          <HiOutlineMenuAlt4 className="w-8 h-8 text-white" />
         </div>
       </div>
       {/* /// mobile button /// */}

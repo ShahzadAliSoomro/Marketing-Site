@@ -4,9 +4,10 @@ import { BsArrowRight } from "react-icons/bs";
 import { BiLogoLinkedin, BiLogoFacebook } from "react-icons/bi";
 export default function Footer() {
   return (
-    <div className="w-full container mx-auto">
+    <div className="w-full container mx-auto text-white lg:pt-24 pt-0">
       <div className="flex flex-col gap-28 lg:p-14 p-7">
-        <div className="flex flex-col gap-6">
+        <div className="w-full border-b-2 border-black dark:border-white lg:pt-14 pt-0"></div>
+        <div className="flex flex-col gap-6 lg:pt-24 pt-0">
           <div>
             <p className=" text-lg">Work with us</p>
           </div>
@@ -25,7 +26,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col gap-6 pt-24">
-          <div className="flex justify-between flex-wrap lg:flex-nowrap gap-5 lg:gap-0">
+          <div className="flex justify-between flex-wrap lg:flex-nowrap gap-5 lg:gap-0 lg:pt-24 pt-0">
             <div className="flex flex-col">
               <div>
                 <p>2 Broadway</p>
