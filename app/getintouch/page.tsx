@@ -1,5 +1,5 @@
 import React from "react";
-import { BsArrowDownShort } from "react-icons/bs";
+import { BsArrowDownShort, BsArrowRight } from "react-icons/bs";
 
 export default function GetInTouch() {
   return (
@@ -34,7 +34,7 @@ export default function GetInTouch() {
             <div className="w-full lg:w-8/12">
               <div className="flex flex-col">
                 <form className="flex flex-col gap-12">
-                 
+
                   <div className="relative z-0 mb-6 w-full group">
                     <input
                       type="name"
@@ -84,7 +84,7 @@ export default function GetInTouch() {
                   </div>
                   <div className="relative z-0 mb-6 w-full group">
                     <textarea
-                     
+
                       name="message"
                       id="message"
                       className="block py-20 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
@@ -98,6 +98,10 @@ export default function GetInTouch() {
                       Your Message
                     </label>
                   </div>
+                  <button type="submit"
+                    className="w-[80px] h-[80px] bg-[#643EFF] rounded-full p-3 flex justify-center items-center ml-auto">
+                    <BsArrowRight className="text-white w-10 h-10" />
+                  </button>
                 </form>
               </div>
             </div>
