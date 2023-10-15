@@ -18,9 +18,9 @@ export default function Navbar() {
 
   return (
     <div className="w-full container mx-auto">
-      <div className="flex justify-between items-center lg:p-14 p-7">
+      <div className="flex justify-between items-center lg:p-14 p-7 ">
         <div className="lg:w-[329.34px] w-[150px]">
-          <Link href="/">
+          <Link href="/" className="text-white">
             <svg
               width="100%"
               height="100%"
@@ -54,7 +54,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="hidden md:block">
-          <div className="flex justify-center items-center gap-10 text-[#A09EA0] text-xl">
+          <div className="flex justify-center items-center gap-10 text-white text-xl">
             <div className="flex justify-center items-center gap-3">
               <div>
                 <Link href="/service">Services</Link>
