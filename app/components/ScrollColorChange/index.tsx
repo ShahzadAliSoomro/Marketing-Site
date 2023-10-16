@@ -40,22 +40,22 @@ const ScrollColorChange = ({
         : "#C5C4C9";
       } else if (pathname === "/services") { // Ensure "Services" is spelled correctly
         return scrollPosition <= 30
-          ? "white"
+          ? "#FFFFFF"
           : scrollPosition <= 35
           ? "white"
           : "white";
       } else if (pathname === "/about"){
-        return scrollPosition <= 30
+        return scrollPosition <= 50
           ? "white"
           : scrollPosition <= 50
           ? "black"
           : "gray";
       } else if (pathname === "/getintouch"){
-        return scrollPosition <= 30
+        return scrollPosition <= 80
         ? "#643EFF"
         : "#643EFF"
-        ? "#575759"
-        : "#C5C4C9";
+
+        
       } 
       
       console.log(pathname);
@@ -68,9 +68,14 @@ const ScrollColorChange = ({
     } else if (pathname === "/" && scrollPosition <= 90) {
       return scrollPosition <= 70 ? "white" : "white" ? "#E2E2E4" : "#C5C4C9";
 
+    } else if (pathname === "/getintouch" && scrollPosition <= 90) {
+      return scrollPosition <= 70 ? "#643EFF" : "#643EFF" ? "#31236D" : "#31236D";
+
+    } else if (pathname === "/services" && scrollPosition <= 90) {
+     return scrollPosition <= 70 ? "white" : "white" ? "#E2E2E4" : "#C5C4C9";
     }
      else {
-      (pathname === "/" && scrollPosition <= 10)
+      (pathname === "/")
       return "black";
     }
   };

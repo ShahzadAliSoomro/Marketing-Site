@@ -1,9 +1,11 @@
+
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ScrollColorChange from "./components/ScrollColorChange";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,12 +21,61 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script src="/js/cables-library.js"></Script>
+        <Script src="/js/patch.js" />
+      </head>
       <body className="inter.className">
+        <canvas
+          id="glcanvas"
+          width="100vw"
+          height="100vh"
+          tabIndex={1}
+        ></canvas>
         <ScrollColorChange>
           <Navbar />
           {children}
           <Footer />
         </ScrollColorChange>
+
+        <script
+  dangerouslySetInnerHTML={{
+    __html: `
+      function showError(errId, errMsg) {
+        // handle critical errors here if needed
+      }
+
+      function patchInitialized(patch) {
+        // You can now access the patch object (patch), register variable watchers and so on
+      }
+
+      function patchFinishedLoading(patch) {
+        // The patch is ready now, all assets have been loaded
+      }
+
+      document.addEventListener("CABLES.jsLoaded", function (event) {
+        CABLES.patch = new CABLES.Patch({
+          patch: CABLES.exportedPatch,
+          prefixAssetPath: "",
+          assetPath: "assets/",
+          jsPath: "js/",
+          glCanvasId: "glcanvas",
+          glCanvasResizeToWindow: true,
+          onError: showError,
+          onPatchLoaded: patchInitialized,
+          onFinishedLoading: patchFinishedLoading,
+          canvas: { alpha: true, premultipliedAlpha: true }
+        });
+      });
+
+      // disable rubberband effect on mobile devices
+      document.getElementById('glcanvas').addEventListener('touchmove', (e) => {
+        e.preventDefault();
+      }, false);
+    `,
+  }}
+></script>
+
       </body>
     </html>
   );

@@ -112,78 +112,7 @@ const ServiceData = [
 // setting <VscSettings />
 
 export default function Services() {
- 
-  /// custome color add ///
-
-  // const [scrollPosition, setScrollPosition] = useState(0);
-  // const servicePageBackgroundColor = "#FFFFFF";
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const currentPosition =
-  //       (window.scrollY / (document.body.scrollHeight - window.innerHeight)) *
-  //       100;
-  //     setScrollPosition(currentPosition);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
-  // const getColorFromScrollPosition = (scrollPosition: number) => {
-  //   if (scrollPosition <= 20) {
-  //     if (scrollPosition <= 10) {
-  //       return "white";
-  //     } else if (scrollPosition <= 15) {
-  //       const ratio = (scrollPosition - 10) / 5;
-  //       return interpolateColors("white", "#454648", ratio);
-  //     } else {
-  //       const ratio = (scrollPosition - 15) / 5;
-  //       return interpolateColors("#454648", "#575759", ratio);
-  //     }
-  //   } else if (scrollPosition <= 60) {
-  //     if (scrollPosition <= 50) {
-  //       return "#959599";
-  //     } else {
-  //       const ratio = (scrollPosition - 50) / 10;
-  //       return interpolateColors("#959599", "#C5C4C9", ratio);
-  //     }
-  //   } else if (scrollPosition <= 90) {
-  //     if (scrollPosition <= 70) {
-  //       return "white";
-  //     } else {
-  //       const ratio = (scrollPosition - 70) / 20;
-  //       return interpolateColors("white", "#E2E2E4", ratio);
-  //     }
-  //   } else {
-  //     return "white";
-  //   }
-  // };
-
-  // const interpolateColors = (color1: string, color2: string, ratio: number) => {
-  //   const hex = (c: string) => parseInt(c, 16);
-  //   const r1 = hex(color1.slice(1, 3));
-  //   const g1 = hex(color1.slice(3, 5));
-  //   const b1 = hex(color1.slice(5, 7));
-  //   const r2 = hex(color2.slice(1, 3));
-  //   const g2 = hex(color2.slice(3, 5));
-  //   const b2 = hex(color2.slice(5, 7));
-    
-  //   const r = Math.round(r1 + ratio * (r2 - r1));
-  //   const g = Math.round(g1 + ratio * (g2 - g1));
-  //   const b = Math.round(b1 + ratio * (b2 - b1));
-
-  //   return `#${r.toString(16).padStart(2, "0")}${g.toString(16).padStart(2, "0")}${b.toString(16).padStart(2, "0")}`;
-  // };
-
-  // const backgroundColor = getColorFromScrollPosition(scrollPosition);
-
-
   return (
-    
     <div className="w-full container mx-auto">
       <div className="flex flex-col lg:p-14 p-7">
         <div className="lg:text-5xl text-3xl">Features</div>
