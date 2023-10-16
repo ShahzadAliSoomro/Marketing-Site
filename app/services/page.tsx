@@ -116,7 +116,7 @@ export default function Services() {
     <div className="w-full container mx-auto">
       <div className="flex flex-col lg:p-14 p-7">
         <div className="lg:text-5xl text-3xl">Features</div>
-        <div className="grid lg:grid-cols-2 grid-cols-1 pt-20 gap-8 lg:gap-0">
+        <div className="grid lg:grid-cols-1 xl:grid-cols-2 grid-cols-1 pt-20 gap-8 lg:gap-0">
           {ServiceData.map((data) => (
             <div
               key={data.id}

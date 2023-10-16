@@ -9,9 +9,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
-  if (pathname === "/Services") {
-    return null;
-  }
+  const textColorClass = pathname === "/services" || pathname === "/about" ? "text-black" : "text-white";
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -26,7 +24,7 @@ export default function Navbar() {
     <div className="w-full container mx-auto">
       <div className="flex justify-between items-center lg:p-14 p-7 ">
         <div className="lg:w-[329.34px] w-[150px]">
-          <Link href="/" className="text-white">
+          <Link href="/" className={textColorClass}>
             <svg
               width="100%"
               height="100%"
@@ -63,24 +61,24 @@ export default function Navbar() {
           <div className="flex justify-center items-center gap-10 text-white text-xl">
             <div className="flex justify-center items-center gap-3">
               <div>
-                <Link href="/services">Services</Link>
+                <Link href="/services" className={textColorClass}>Services</Link>
               </div>
               <div>
-                <AiOutlinePlus />
+                <AiOutlinePlus  className={textColorClass}/>
               </div>
             </div>
             <div>
-              <Link href="/about"> About </Link>
+              <Link href="/about"  className={textColorClass}> About </Link>
             </div>
             <div className="bg-[#643EFF] p-3 rounded-full">
-              <Link href="/getintouch" className="text-white">
+              <Link href="/getintouch" >
                 Get in touch
               </Link>
             </div>
           </div>
         </div>
         <div onClick={toggleMenu} className="md:hidden">
-          <HiOutlineMenuAlt4 className="w-8 h-8 text-white" />
+          <HiOutlineMenuAlt4 className={`w-8 h-8 ${textColorClass}`} />
         </div>
       </div>
       {/* /// mobile button /// */}
@@ -89,13 +87,13 @@ export default function Navbar() {
           <div className="flex flex-col pt-10 gap-5 text-[#fff] text-xl p-7">
             <div className="flex gap-3">
               <div className="border-b border-[#A09EA0] py-2 w-full">
-                <Link href="/services" onClick={handleLinkClick}>
+                <Link href="/services"   onClick={handleLinkClick}>
                   Services
                 </Link>
               </div>
             </div>
             <div className="border-b border-[#A09EA0] py-2 w-full">
-              <Link href="/about" onClick={handleLinkClick}>
+              <Link href="/about"   onClick={handleLinkClick}>
                 {" "}
                 About{" "}
               </Link>
@@ -104,7 +102,7 @@ export default function Navbar() {
               <Link
                 onClick={handleLinkClick}
                 href="/getintouch"
-                className="text-white"
+                
               >
                 Get in touch
               </Link>

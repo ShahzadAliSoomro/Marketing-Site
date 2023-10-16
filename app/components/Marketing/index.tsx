@@ -83,9 +83,9 @@ const MarketData = [
 export default function Marketing() {
   return (
     <div className="w-full container mx-auto">
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-9 lg:p-14 p-7">
+      <div className="grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-9 lg:p-14 p-7">
         {MarketData.map((data) => (
-          <div className="flex flex-col gap-5">
+          <div key={data.id} className="flex flex-col gap-5">
             <div className="lg:text-5xl text-2xl">{data.title}</div>
             <p className="w-full lg:w-[401.33px] text-lg text-gray-500">
               {data.description}

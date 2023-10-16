@@ -72,8 +72,10 @@ const ScrollColorChange = ({
       return scrollPosition <= 70 ? "#643EFF" : "#643EFF" ? "#31236D" : "#31236D";
 
     } else if (pathname === "/services" && scrollPosition <= 90) {
-     return scrollPosition <= 70 ? "white" : "white" ? "#E2E2E4" : "#C5C4C9";
-    }
+     return scrollPosition <= 70 ? "white" : "#767777" ? "#E2E2E4" : "#C5C4C9";
+    } else if (pathname === "/about" && scrollPosition <= 90) {
+      return scrollPosition <= 70 ? "white" : "#767777" ? "#E2E2E4" : "#C5C4C9";
+     } 
      else {
       (pathname === "/")
       return "black";
