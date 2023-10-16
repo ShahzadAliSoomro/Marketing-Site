@@ -3,9 +3,15 @@ import React, { useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 import Link from "next/link";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+
+  if (pathname === "/Services") {
+    return null;
+  }
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -57,7 +63,7 @@ export default function Navbar() {
           <div className="flex justify-center items-center gap-10 text-white text-xl">
             <div className="flex justify-center items-center gap-3">
               <div>
-                <Link href="/service">Services</Link>
+                <Link href="/services">Services</Link>
               </div>
               <div>
                 <AiOutlinePlus />
@@ -83,7 +89,7 @@ export default function Navbar() {
           <div className="flex flex-col pt-10 gap-5 text-[#fff] text-xl p-7">
             <div className="flex gap-3">
               <div className="border-b border-[#A09EA0] py-2 w-full">
-                <Link href="/service" onClick={handleLinkClick}>
+                <Link href="/services" onClick={handleLinkClick}>
                   Services
                 </Link>
               </div>
