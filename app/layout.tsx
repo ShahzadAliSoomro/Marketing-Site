@@ -1,5 +1,3 @@
-"use client";
-import React, { useEffect } from 'react';
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -22,34 +20,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Function to handle the scroll event
-  const handleScroll = () => {
-    // Add your logic to update the canvas based on the scroll position here
-    // For example, you can change the canvas background color based on the scroll position
-    const scrollPosition = window.scrollY;
-
-    // Example: Change canvas background color based on scroll position
-    const canvas = document.getElementById('glcanvas');
-    if (canvas) {
-      if (scrollPosition > 200) {
-        // Change background color when scroll position is greater than 200 pixels
-        canvas.style.backgroundColor = ''; // Red background color
-      } else {
-        // Reset the background color
-        canvas.style.backgroundColor = ''; // Default background color
-      }
-    }
-  };
-
-  // Attach the scroll event listener when the component mounts
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  
   return (
     <html lang="en">
       <head>

@@ -9,7 +9,7 @@ export default function About() {
           <div className="lg:text-7xl text-3xl">What makes</div>
           <div className="lg:text-7xl text-3xl font-bold">us tick</div>
         </div>
-        <div className="flex flex-col gap-12 pt-24">
+        <div className="flex flex-col gap-12 pt-40">
           <div className="flex flex-col gap-10">
             <div>
               <p>Goal Harmony</p>
@@ -31,7 +31,7 @@ export default function About() {
             perfect mix to help our clients grow.
           </p>
         </div>
-        <div className="flex gap-32 pt-24">
+        <div className="flex gap-32 pt-40">
           <div className="flex flex-col gap-2">
             <div className="lg:text-6xl text-2xl font-normal">19</div>
             <p className="text-lg text-gray-500">Years Established</p>
@@ -45,7 +45,7 @@ export default function About() {
             <p className="text-lg text-gray-500">Happy Clients</p>
           </div>
         </div>
-        <div className="flex justify-between flex-wrap lg:flex-nowrap pt-24">
+        <div className="flex justify-between flex-wrap lg:flex-nowrap pt-40">
           <div className="flex flex-col gap-10">
             <div className="border-t-2 border-black"></div>
             <div className="lg:text-6xl text-2xl font-normal">Our History</div>
@@ -75,7 +75,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="flex justify-between flex-wrap lg:flex-nowrap pt-24">
+        <div className="flex justify-between flex-wrap lg:flex-nowrap pt-40">
           <p className="text-lg text-gray-500">Testimonial</p>
           <div className="flex flex-col gap-5">
           <div className="w-full lg:w-[1011.66px] lg:text-5xl text-2xl font-light">

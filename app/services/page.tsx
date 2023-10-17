@@ -13,7 +13,7 @@ import { FiMap } from "react-icons/fi";
 const ServiceData = [
   {
     id: 1,
-    icon: <TbBrandTether className="text-black w-[128px] h-[128px]" />,
+    icon: <TbBrandTether className="text-white hover:text-[hsla(36,100%,47%,1)] w-[128px] h-[128px]" />,
     title: "Uninvolved Updates",
     description:
       "Experience seamless IT management with our cutting-edge automation solution for OS, SAP Kernel & SAP Hana updates. Say goodbye to manual updates and ensure your systems are always up-to-date with the latest enhancements, security patches, and optimizations, boosting performance and reliability effortlessly.",
@@ -22,7 +22,7 @@ const ServiceData = [
   },
   {
     id: 2,
-    icon: <MdOutlineDiamond className="text-black w-[128px] h-[128px]" />,
+    icon: <MdOutlineDiamond className="text-white hover:text-[hsla(36,100%,47%,1)] w-[128px] h-[128px]" />,
     title: "Seamless System Hardening",
     description:
       "Our software ensures the security of your SAP systems and the underlying OS by effortlessly implementing critical hardening measures, safeguarding your data and operations.",
@@ -31,7 +31,7 @@ const ServiceData = [
   },
   {
     id: 3,
-    icon: <VscSettings className="text-black w-[128px] h-[128px]" />,
+    icon: <VscSettings className="text-white hover:text-[hsla(36,100%,47%,1)] w-[128px] h-[128px]" />,
     title: "Your SAP Landscape Central",
     description:
       "levate your SAP system management with robust SAP Parameter management and centralized deployments using full-featured Ansible playbooks. Harness the power to streamline changes across your SAP landscape, while enjoying enhanced auditing capabilities that provide transparency and control over system configurations.",
@@ -40,7 +40,7 @@ const ServiceData = [
   },
   {
     id: 4,
-    icon: <BsShieldCheck className="text-black w-[128px] h-[128px]" />,
+    icon: <BsShieldCheck className="text-white hover:text-[hsla(36,100%,47%,1)] w-[128px] h-[128px]" />,
     title: "Secret Management",
     description:
       "Unlock the potential of seamless secret management with our robust, Vault-based solution. Includes automated SSL certificate issuance and renewal, along with secure storage of all your essential credentials within your SAP landscape. Safeguard your sensitive information and enjoy effortless, worry-free management, ensuring your systems are always protected and compliant.",
@@ -49,7 +49,7 @@ const ServiceData = [
   },
   {
     id: 5,
-    icon: <PiTarget className="text-black w-[128px] h-[128px]" />,
+    icon: <PiTarget className="text-white hover:text-[hsla(36,100%,47%,1)] w-[128px] h-[128px]" />,
     title: "Smooth Orchestration",
     description:
       "Enjoy streamlined SAP automation through seamless integration with Ansible, simplifying complex workflows and enhancing efficiency in your IT operations.",
@@ -58,7 +58,7 @@ const ServiceData = [
   },
   {
     id: 6,
-    icon: <FiMap className="text-black w-[128px] h-[128px]" />,
+    icon: <FiMap className="text-white hover:text-[hsla(36,100%,47%,1)] w-[128px] h-[128px]" />,
     title: "Realtime Landscape Overview",
     description:
       "Gain immediate insights into your SAP landscape's health and performance with real-time monitoring, empowering you to make informed decisions and prevent potential issues.",
@@ -67,7 +67,7 @@ const ServiceData = [
   },
   {
     id: 7,
-    icon: <TbBrandTether className="text-black w-[128px] h-[128px]" />,
+    icon: <TbBrandTether className="text-white hover:text-[hsla(36,100%,47%,1)] w-[128px] h-[128px]" />,
     title: "Solid Backup Management",
     description:
       "Safeguard your SAP data and configurations with robust backup management, ensuring quick recovery in case of unexpected data loss or system failures.",
@@ -76,7 +76,7 @@ const ServiceData = [
   },
   {
     id: 8,
-    icon: <PiRocketLaunchDuotone className="text-black w-[128px] h-[128px]" />,
+    icon: <PiRocketLaunchDuotone className="text-white hover:text-[hsla(36,100%,47%,1)] w-[128px] h-[128px]" />,
     title: "Automagic Discovery",
     description:
       "Gettings started is super simple with our Landscape Discovery Tool. Just point it to an IP range and we'll figure out your system. Have an up-to-date overview of your systems in less than 5 minutes!",
@@ -85,7 +85,7 @@ const ServiceData = [
   },
   {
     id: 9,
-    icon: <GoGraph className="text-black w-[128px] h-[128px]" />,
+    icon: <GoGraph className="text-white hover:text-[hsla(36,100%,47%,1)] w-[128px] h-[128px]" />,
     title: "Rigorous Reporting",
     description:
       "Access comprehensive and customizable reports to analyze SAP system performance, compliance, and utilization, enabling data-driven decision-making and accountability.",
@@ -94,7 +94,7 @@ const ServiceData = [
   },
   {
     id: 10,
-    icon: <BiSolidUserBadge className="text-black w-[128px] h-[128px]" />,
+    icon: <BiSolidUserBadge className="text-white hover:text-[hsla(36,100%,47%,1)] w-[128px] h-[128px]" />,
     title: "Flexible Access Management",
     description:
       "Take control of user access to your SAP systems effortlessly, ensuring the right people have the right permissions, enhancing security, and compliance.",
