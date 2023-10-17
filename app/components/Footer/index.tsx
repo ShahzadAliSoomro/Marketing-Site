@@ -20,7 +20,7 @@ export default function Footer() {
                 Conversation
               </div>
             </div>
-            <div className="w-[80px] h-[80px] bg-[#643EFF] rounded-full p-3 flex justify-center items-center">
+            <div className="w-[80px] h-[80px] bg-[#f2a900] hover:bg-[hsla(36,100%,47%,1)] rounded-full p-3 flex justify-center items-center">
               <BsArrowRight className="text-white w-10 h-10" />
             </div>
           </div>

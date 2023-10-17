@@ -91,7 +91,7 @@ export default function Marketing() {
               {data.description}
               <Link
                 href=""
-                className="text-[#643EFF] border-b border-[#643EFF]"
+                className="text-[#f2a900] hover:text-[hsla(36,100%,47%,1)] border-b border-[#f2a900]"
               >
                 {data.link}
               </Link>
@@ -99,7 +99,7 @@ export default function Marketing() {
             </p>
             <div className="flex items-center gap-3">
               <div className="text-lg font-normal">{data.arrowtext}</div>
-              <div className="bg-[#643EFF] w-[40px] h-[40px] rounded-full p-2">
+              <div className="bg-[#f2a900] hover:bg-[hsla(36,100%,47%,1)] w-[40px] h-[40px] rounded-full p-2">
                 <BsArrowRight className="text-white w-6 h-6" />
               </div>
             </div>

@@ -87,7 +87,7 @@ export default function About() {
             looking forward to the next few years. Who knows how far we can go.
           </div>
           <div className="flex gap-2 items-center">
-            <div className="w-[48px] h-[48px] bg-[#643EFF] justify-center items-center flex rounded-full p-2">
+            <div className="w-[48px] h-[48px] bg-[#f2a900] hover:bg-[hsla(36,100%,47%,1)] justify-center items-center flex rounded-full p-2">
               <FaQuoteLeft className="text-white w-6 h-6" />
             </div>
             <div className="flex flex-col">

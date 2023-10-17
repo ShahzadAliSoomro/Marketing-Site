@@ -2,22 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Define CSS classes for different background colors */
-/* .white-background {
-  background-color: white;
-}
 
-.red-background {
-  background-color: red;
-}
 
-.gray-background {
-  background-color: gray;
+.inter.className {
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
 }
-
-.black-background {
-  background-color: black;
-} */
 /* body {
   margin: 0;
   background-color: #000;
@@ -26,10 +16,24 @@
   height:100vh;
 } */
 
+/* body {
+  margin: 0;
+  background-color: transparent;
+  color: brown;
+  font-family: Helvetica, Arial, sans-serif;
+  height:200vh;
+} */
+
+
+
 canvas {
+ 
   display: block;
-  position: absolute;
+  /* position: absolute; */
   outline:0;
+  /* background-color: hsla(172, 100%, 50%, 0.397); */
+  /* width: 100vw;
+  height: 100vh; */
 }
 
 * {

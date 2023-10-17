@@ -9,7 +9,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
-  const textColorClass = pathname === "/services" || pathname === "/about" ? "text-black" : "text-white";
+  const textColorClass = pathname === "/services" || pathname === "/about" ? "text-white" : "text-white";
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -70,7 +70,7 @@ export default function Navbar() {
             <div>
               <Link href="/about"  className={textColorClass}> About </Link>
             </div>
-            <div className="bg-black hover:bg-white hover:text-black p-3 rounded-full">
+            <div className="bg-[#f2a900] hover:bg-[hsla(36,100%,47%,1)] p-3 rounded-full">
               <Link href="/getintouch" >
                 Get in touch
               </Link>

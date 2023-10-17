@@ -17,7 +17,7 @@ export default function HeroSec() {
         </div>
         <div className="flex items-center gap-3 text-white">
           <div className="text-lg font-normal">More about us</div>
-          <div className="bg-[#643EFF] w-[40px] h-[40px] rounded-full p-2">
+          <div className="bg-[#f2a900] hover:bg-[hsla(36,100%,47%,1)] w-[40px] h-[40px] rounded-full p-2">
             <BsArrowRight className="text-white w-6 h-6" />
           </div>
         </div>

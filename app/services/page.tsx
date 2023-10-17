@@ -9,7 +9,6 @@ import { BsShieldCheck } from "react-icons/bs";
 import { PiRocketLaunchDuotone, PiTarget } from "react-icons/pi";
 import { GoGraph } from "react-icons/go";
 import { FiMap } from "react-icons/fi";
-import ScrollColorChange from "../components/ScrollColorChange";
 
 const ServiceData = [
   {
@@ -18,7 +17,7 @@ const ServiceData = [
     title: "Uninvolved Updates",
     description:
       "Experience seamless IT management with our cutting-edge automation solution for OS, SAP Kernel & SAP Hana updates. Say goodbye to manual updates and ensure your systems are always up-to-date with the latest enhancements, security patches, and optimizations, boosting performance and reliability effortlessly.",
-    arrow: <BsArrowRight className="text-black w-6 h-6" />,
+    arrow: <BsArrowRight className=" w-6 h-6" />,
     text: "Read more",
   },
   {
@@ -27,7 +26,7 @@ const ServiceData = [
     title: "Seamless System Hardening",
     description:
       "Our software ensures the security of your SAP systems and the underlying OS by effortlessly implementing critical hardening measures, safeguarding your data and operations.",
-    arrow: <BsArrowRight className="text-black w-6 h-6" />,
+    arrow: <BsArrowRight className=" w-6 h-6" />,
     text: "Read more",
   },
   {
@@ -36,7 +35,7 @@ const ServiceData = [
     title: "Your SAP Landscape Central",
     description:
       "levate your SAP system management with robust SAP Parameter management and centralized deployments using full-featured Ansible playbooks. Harness the power to streamline changes across your SAP landscape, while enjoying enhanced auditing capabilities that provide transparency and control over system configurations.",
-    arrow: <BsArrowRight className="text-black w-6 h-6" />,
+    arrow: <BsArrowRight className=" w-6 h-6" />,
     text: "Read more",
   },
   {
@@ -45,7 +44,7 @@ const ServiceData = [
     title: "Secret Management",
     description:
       "Unlock the potential of seamless secret management with our robust, Vault-based solution. Includes automated SSL certificate issuance and renewal, along with secure storage of all your essential credentials within your SAP landscape. Safeguard your sensitive information and enjoy effortless, worry-free management, ensuring your systems are always protected and compliant.",
-    arrow: <BsArrowRight className="text-black w-6 h-6" />,
+    arrow: <BsArrowRight className=" w-6 h-6" />,
     text: "Read more",
   },
   {
@@ -54,7 +53,7 @@ const ServiceData = [
     title: "Smooth Orchestration",
     description:
       "Enjoy streamlined SAP automation through seamless integration with Ansible, simplifying complex workflows and enhancing efficiency in your IT operations.",
-    arrow: <BsArrowRight className="text-black w-6 h-6" />,
+    arrow: <BsArrowRight className=" w-6 h-6" />,
     text: "Read more",
   },
   {
@@ -63,7 +62,7 @@ const ServiceData = [
     title: "Realtime Landscape Overview",
     description:
       "Gain immediate insights into your SAP landscape's health and performance with real-time monitoring, empowering you to make informed decisions and prevent potential issues.",
-    arrow: <BsArrowRight className="text-black w-6 h-6" />,
+    arrow: <BsArrowRight className=" w-6 h-6" />,
     text: "Read more",
   },
   {
@@ -72,7 +71,7 @@ const ServiceData = [
     title: "Solid Backup Management",
     description:
       "Safeguard your SAP data and configurations with robust backup management, ensuring quick recovery in case of unexpected data loss or system failures.",
-    arrow: <BsArrowRight className="text-black w-6 h-6" />,
+    arrow: <BsArrowRight className=" w-6 h-6" />,
     text: "Read more",
   },
   {
@@ -81,7 +80,7 @@ const ServiceData = [
     title: "Automagic Discovery",
     description:
       "Gettings started is super simple with our Landscape Discovery Tool. Just point it to an IP range and we'll figure out your system. Have an up-to-date overview of your systems in less than 5 minutes!",
-    arrow: <BsArrowRight className="text-black w-6 h-6" />,
+    arrow: <BsArrowRight className=" w-6 h-6" />,
     text: "Read more",
   },
   {
@@ -90,7 +89,7 @@ const ServiceData = [
     title: "Rigorous Reporting",
     description:
       "Access comprehensive and customizable reports to analyze SAP system performance, compliance, and utilization, enabling data-driven decision-making and accountability.",
-    arrow: <BsArrowRight className="text-black w-6 h-6" />,
+    arrow: <BsArrowRight className=" w-6 h-6" />,
     text: "Read more",
   },
   {
@@ -99,17 +98,10 @@ const ServiceData = [
     title: "Flexible Access Management",
     description:
       "Take control of user access to your SAP systems effortlessly, ensuring the right people have the right permissions, enhancing security, and compliance.",
-    arrow: <BsArrowRight className="text-black w-6 h-6" />,
+    arrow: <BsArrowRight className="  w-6 h-6" />,
     text: "Read more",
   },
 ];
-// rocket /// <PiRocketLaunchDuotone/>
-// graph /// <GoGraph/>
-// target guoal <PiTarget/>
-// map <FiMap/>
-// check4 <BsShieldCheck />
-// diamon <MdOutlineDiamond/>
-// setting <VscSettings />
 
 export default function Services() {
   return (
@@ -128,34 +120,13 @@ export default function Services() {
                 <p className="w-full lg:w-[388.33px] text-lg text-gray-500">
                   {data.description}
                 </p>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 hover:text-[hsla(36,100%,47%,1)]">
                   <div className="">{data.arrow}</div>
                   <div className="text-lg font-normal">{data.text}</div>
                 </div>
               </div>
             </div>
           ))}
-
-          {/* <div className="flex gap-4">
-            <div>Icon add</div>
-            <div className="flex flex-col gap-5">
-              <div className="lg:text-5xl text-2xl">Uninvolved Updates</div>
-              <p className="w-full lg:w-[388.33px] text-lg text-gray-500">
-                Experience seamless IT management with our cutting-edge
-                automation solution for OS, SAP Kernel & SAP Hana updates. Say
-                goodbye to manual updates and ensure your systems are always
-                up-to-date with the latest enhancements, security patches, and
-                optimizations, boosting performance and reliability
-                effortlessly.
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="">
-                  <BsArrowRight className="text-black w-6 h-6" />
-                </div>
-                <div className="text-lg font-normal">Read more</div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

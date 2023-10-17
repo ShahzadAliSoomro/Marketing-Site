@@ -82,7 +82,7 @@ const ScrollColorChange = ({
     }
   };
 
-  console.log(scrollPosition);
+  // console.log(scrollPosition);
   const backgroundColor = getColorFromScrollPosition(scrollPosition);
 
   return (
