@@ -100,7 +100,7 @@ export default function GetInTouch() {
                     </label>
                   </div>
                   <div className="">
-              <button className="bg-[#f2a900] hover:bg-[hsla(36,100%,47%,1)] p-2 w-[150px] rounded-full">
+              <button className="bg-[#f2a900] text-white hover:bg-[hsla(36,100%,47%,1)] p-2 w-[150px] rounded-full">
                 Submit
               </button>
             </div>

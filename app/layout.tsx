@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ScrollColorChange from "./components/ScrollColorChange";
 import Script from "next/script";
-import CanvasAnimation from "./components/CanvasAnimation";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,12 +23,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* <Script src="/js/cables-library.js"></Script> */}
+        {/* <Script src="/js/cables-library.js" /> */}
         <Script src="/js/patch.js" />
       </head>
-      <body className="inter.className text-white">
+      
+      <body className="inter.className">
+        
         <canvas
-          className="fixed top-0 left-0 right-0 bottom-0 inset-0 z-0"
+          className="fixed top-0 left-0 right-0 bottom-0 inset-0 z-20"
           id="glcanvas"
           width="100vw"
           height="100vh"
@@ -37,12 +38,12 @@ export default function RootLayout({
         ></canvas>
 
         <div className="relative z-20">
-          {/* <ScrollColorChange> */}
+          <ScrollColorChange>
             <Navbar />
 
             {children}
             <Footer />
-          {/* </ScrollColorChange> */}
+          </ScrollColorChange>
         </div>
 
         <script

@@ -9,7 +9,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
-  const textColorClass = pathname === "/services" || pathname === "/about" ? "text-white" : "text-white";
+  const textColorClass = pathname === "/services" || pathname === "/about" ? "text-black" : "text-white";
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

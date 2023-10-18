@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className="w-full container mx-auto text-white lg:pt-24 pt-0">
       <div className="flex flex-col gap-28 lg:p-14 p-7">
-        <div className="w-full border-b-2 border-black dark:border-white lg:pt-14 pt-0"></div>
+        <div className="w-full border-b-2 border-white dark:border-white lg:pt-14 pt-0"></div>
         <div className="flex flex-col gap-6 lg:pt-24 pt-0">
           <div>
             <p className=" text-lg">Work with us</p>

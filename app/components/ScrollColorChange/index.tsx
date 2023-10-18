@@ -37,7 +37,7 @@ const ScrollColorChange = ({
         ? "black"
         : "#454648"
         ? "#575759"
-        : "#C5C4C9";
+        : "white";
       } else if (pathname === "/services") { // Ensure "Services" is spelled correctly
         return scrollPosition <= 30
           ? "#FFFFFF"
