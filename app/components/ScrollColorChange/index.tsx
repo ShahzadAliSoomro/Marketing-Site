@@ -34,7 +34,7 @@ const ScrollColorChange = ({
     if (scrollPosition <= 20) {
       if (pathname === "/") {
         return scrollPosition <= 10
-        ? "black"
+        ? "#111213"
         : "#454648"
         ? "#575759"
         : "white";
@@ -78,7 +78,7 @@ const ScrollColorChange = ({
      } 
      else {
       (pathname === "/")
-      return "black";
+      return "#111213";
     }
   };
 

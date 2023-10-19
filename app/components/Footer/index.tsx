@@ -27,23 +27,23 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-6 pt-24">
           <div className="flex justify-between flex-wrap lg:flex-nowrap gap-5 lg:gap-0 lg:pt-24 pt-0">
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-5">
               <div>
-                <p>2 Broadway</p>
+                <p>Bodenacherring 7</p>
               </div>
               <div>
-                <p>Nottingham NG1 1PS</p>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <div>
-                <p>0115 96 96 083</p>
-              </div>
-              <div>
-                <p>info@webdna.co.uk</p>
+                <p>8303 Basserdorf, Switzerland</p>
               </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-5">
+              <div>
+                <p>+41793278371</p>
+              </div>
+              <div>
+                <p>contactATterragram.com</p>
+              </div>
+            </div>
+            <div className="flex flex-col gap-5">
               <div>
                 <p>Work</p>
               </div>
@@ -51,7 +51,7 @@ export default function Footer() {
                 <p>About</p>
               </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-5">
               <div>
                 <p>Journal</p>
               </div>
@@ -59,7 +59,7 @@ export default function Footer() {
                 <p>Agencies</p>
               </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-5">
               <div>
                 <p>Privacy Policy</p>
               </div>
@@ -68,7 +68,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 ">
             <div>
               <AiOutlineTwitter className="w-7 h-7" />
             </div>
